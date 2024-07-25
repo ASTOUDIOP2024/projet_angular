@@ -1,0 +1,95 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ppp": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/ppp",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "ppp:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ppp:build:production"
+            },
+            "development": {
+              "browserTarget": "ppp:build:development"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ppp:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": ["zone.js", "zone.js/testing"],
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": ["src/assets"],
+            "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
+}

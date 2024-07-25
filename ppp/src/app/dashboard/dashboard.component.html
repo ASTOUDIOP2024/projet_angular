@@ -1,0 +1,244 @@
+
+<div class="dashboard">
+
+    <div class="header">
+
+        <!-- <div class="divH1">
+            fffffffffffffffffff
+        </div> -->
+        <header class="divH2">
+            <div class="divSH2">
+                
+                <div class="nav">
+
+                    <div class="navL">
+                        <a href="">
+                            <img style="width: 100px;" src="assets/images/logo.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="navR">
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+
+    </div>
+
+    <div class="sidebar">
+
+        <div class="sid1">
+            <div class="Csid1">
+
+                <div class="formu">
+                    <svg style="width: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M560 96H368l-64-64H176c-26.5 0-48 21.5-48 48v256c0 26.5 21.5 48 48 48h384c26.5 0 48-21.5 48-48v-192C608 117.5 586.5 96 560 96zM488 480H152C85.83 480 32 426.2 32 360v-240C32 106.8 42.75 96 56 96S80 106.8 80 120v240c0 39.7 32.3 72 72 72h336c13.25 0 24 10.75 24 24S501.3 480 488 480z"></path></svg>
+                    <P style="margin-left: 12px;">MES FORMULAIRES</P>
+                    <span style="opacity: .5; margin-left: 12px;"> (0) </span>
+                </div>
+                <!-- <div class="dossier">
+                    <svg style="width: 1rem; margin-right: .5em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 96h-172.1L226.7 50.75C214.7 38.74 198.5 32 181.5 32H64C28.66 32 0 60.66 0 96v320c0 35.34 28.66 64 64 64h384c35.34 0 64-28.66 64-64V160C512 124.7 483.3 96 448 96zM464 416c0 8.824-7.18 16-16 16H64c-8.82 0-16-7.176-16-16V96c0-8.824 7.18-16 16-16h117.5c4.273 0 8.289 1.664 11.31 4.688L256 144h192c8.82 0 16 7.176 16 16V416zM336 264h-56V207.1C279.1 194.7 269.3 184 256 184S232 194.7 232 207.1V264H175.1C162.7 264 152 274.7 152 288c0 13.26 10.73 23.1 23.1 23.1h56v56C232 381.3 242.7 392 256 392c13.26 0 23.1-10.74 23.1-23.1V311.1h56C349.3 311.1 360 301.3 360 288S349.3 264 336 264z"></path></svg>
+                    Créer un nouveau dossier
+                </div> -->
+
+
+                <div class="dossier" (click)="openDialog()">
+                  <svg style="width: 1rem; margin-right: .5em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 96h-172.1L226.7 50.75C214.7 38.74 198.5 32 181.5 32H64C28.66 32 0 60.66 0 96v320c0 35.34 28.66 64 64 64h384c35.34 0 64-28.66 64-64V160C512 124.7 483.3 96 448 96zM464 416c0 8.824-7.18 16-16 16H64c-8.82 0-16-7.176-16-16V96c0-8.824 7.18-16 16-16h117.5c4.273 0 8.289 1.664 11.31 4.688L256 144h192c8.82 0 16 7.176 16 16V416zM336 264h-56V207.1C279.1 194.7 269.3 184 256 184S232 194.7 232 207.1V264H175.1C162.7 264 152 274.7 152 288c0 13.26 10.73 23.1 23.1 23.1h56v56C232 381.3 242.7 392 256 392c13.26 0 23.1-10.74 23.1-23.1V311.1h56C349.3 311.1 360 301.3 360 288S349.3 264 336 264z"></path></svg>
+                  Créer un nouveau dossier
+                </div>
+
+            </div>
+
+            <div style="border: solid 1px #dedede; border-top: none; margin-right: 2rem; padding: 40%; padding-right: 5px;"></div>
+
+            <div class="sid11">
+
+                <div class="Cgratuit">
+                    <!-- <div class="gratuit"> -->
+                        <div style="background: black; height: 30px; border-radius: 10px;">
+                            <h1 style="color: white; font-size: 25px; padding: 5px;">Gratuit</h1>
+                        </div>
+                        <svg style="width: 1rem; margin-left: auto;" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"></path></svg>
+                    <!-- </div> -->
+                </div>
+                <div class="restant">
+                    <ul style="padding: 0;">
+                        <li>
+                            <a style="text-decoration: none; color: black;" href="">
+                                <svg style="font-size: inherit; width: 1em; height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 32h-416C21.49 32 0 53.49 0 80v64C0 161.6 14.4 176 31.1 176L32 416c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V176c17.6 0 32-14.4 32-31.1V80C512 53.49 490.5 32 464 32zM416 432H96c-8.837 0-16-7.163-16-16V176h352V416C432 424.8 424.8 432 416 432zM464 128h-416V80h416V128zM183.1 272h144C341.3 272 352 261.3 352 248C352 234.7 341.3 224 328 224H183.1C170.7 224 160 234.7 160 247.1C160 261.3 170.7 272 183.1 272z"></path></svg>
+                                <span style="padding-left: 1.3em;">Archive</span>
+                                <span style="font-size: 11px; position: absolute; right: 32px; top: 19px; opacity: .5;"> (0)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none; color: black;" href="">
+                                <svg style="font-size: inherit; width: 1em; height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M424 80C437.3 80 448 90.75 448 104C448 117.3 437.3 128 424 128H412.4L388.4 452.7C385.9 486.1 358.1 512 324.6 512H123.4C89.92 512 62.09 486.1 59.61 452.7L35.56 128H24C10.75 128 0 117.3 0 104C0 90.75 10.75 80 24 80H93.82L130.5 24.94C140.9 9.357 158.4 0 177.1 0H270.9C289.6 0 307.1 9.358 317.5 24.94L354.2 80H424zM177.1 48C174.5 48 171.1 49.34 170.5 51.56L151.5 80H296.5L277.5 51.56C276 49.34 273.5 48 270.9 48H177.1zM364.3 128H83.69L107.5 449.2C108.1 457.5 115.1 464 123.4 464H324.6C332.9 464 339.9 457.5 340.5 449.2L364.3 128z"></path></svg>
+                                <span style="padding-left: 1.3em;">Corbeille</span>
+                                <span style="font-size: 11px; position: absolute; right: 32px; top: 19px; opacity: .5;"> (0)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none; color: black;" href="">
+                                <svg style="font-size: inherit; width: 1em; height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M498.1 5.629C492.7 1.891 486.4 0 480 0c-5.461 0-10.94 1.399-15.88 4.223l-448 255.1C5.531 266.3-.6875 277.8 .0625 289.1s8.375 22.86 19.62 27.55l103.2 43.01l61.85 146.5C186.2 510.6 189.2 512 191.1 512c2.059 0 4.071-.8145 5.555-2.24l85.75-82.4l120.4 50.16c4.293 1.793 8.5 2.472 12.29 2.472c6.615 0 12.11-2.093 15.68-4.097c8.594-4.828 14.47-13.31 15.97-23.05l64-415.1C513.5 24.72 508.3 12.58 498.1 5.629zM32 288l380.1-217.2l-288.2 255.5L32 288zM200.7 462.3L151.1 344.9l229.5-203.4l-169.5 233.1c-2.906 4-3.797 9.094-2.438 13.84c1.374 4.75 4.844 8.594 9.438 10.41l34.4 13.76L200.7 462.3zM416.7 443.3l-167.7-66.56l225.7-310.3L416.7 443.3z"></path></svg>
+                                <span style="padding-left: 1.3em;">Mes soumissions</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none; color: black;" href="#" (click)="openModal($event)">
+                              <svg style="font-size: inherit; width: 1em; height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path d="M544 224c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80zm0-128c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM320 256c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm0-192c44.1 0 80 35.9 80 80s-35.9 80-80 80-80-35.9-80-80 35.9-80 80-80zm244 192h-40c-15.2 0-29.3 4.8-41.1 12.9 9.4 6.4 17.9 13.9 25.4 22.4 4.9-2.1 10.2-3.3 15.7-3.3h40c24.2 0 44 21.5 44 48 0 8.8 7.2 16 16 16s16-7.2 16-16c0-44.1-34.1-80-76-80zM96 224c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80zm0-128c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm304.1 180c-33.4 0-41.7 12-80.1 12-38.4 0-46.7-12-80.1-12-36.3 0-71.6 16.2-92.3 46.9-12.4 18.4-19.6 40.5-19.6 64.3V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-44.8c0-23.8-7.2-45.9-19.6-64.3-20.7-30.7-56-46.9-92.3-46.9zM480 432c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16v-44.8c0-16.6 4.9-32.7 14.1-46.4 13.8-20.5 38.4-32.8 65.7-32.8 27.4 0 37.2 12 80.2 12s52.8-12 80.1-12c27.3 0 51.9 12.3 65.7 32.8 9.2 13.7 14.1 29.8 14.1 46.4V432zM157.1 268.9c-11.9-8.1-26-12.9-41.1-12.9H76c-41.9 0-76 35.9-76 80 0 8.8 7.2 16 16 16s16-7.2 16-16c0-26.5 19.8-48 44-48h40c5.5 0 10.8 1.2 15.7 3.3 7.5-8.5 16.1-16 25.4-22.4z"></path>
+                              </svg>
+                              <span style="padding-left: 1.3em;">Membre d'equipe</span>
+                            </a>
+                          
+                            <div *ngIf="modal">
+                              <div class="modal-overlay" (click)="closeModal()"></div>
+                              <div class="div1" (click)="$event.stopPropagation()">
+                                <div class="div2">
+                                  <h1 id="connct">Connexion</h1>
+                                  <div class="div3">
+                                    <div>
+                                      <h2>Adresse mail :</h2>
+                                      <input class="put w-72" (input)="onInputChange($event)" type="mail" placeholder="votre mail" />
+                                      <h6 *ngIf="error" class="error text-red-500">{{error}}</h6>
+                                    </div>
+                                    <div class="mb-2">
+                                      <h2>Mot de passe :</h2>
+                                      <input class="put w-72" (input)="onInputChange($event)" type="password" placeholder="mot de passe" />
+                                      <h6 *ngIf="error" class="error text-red-500">{{error}}</h6>
+                                    </div>
+                                    <button (click)="closeModal()" class="btnfrm">
+                                      <!-- <FaRegWindowClose/> -->
+                                    </button>
+                                    <button class="btnC" (click)="recup()">
+                                      <h3>Connecter</h3>
+                                    </button>
+                                  </div>
+                                  <div class="logforg">
+                                    <button class="btn mt-3">
+                                      <h3>Inscription</h3>
+                                    </button>
+                                    <button class="btn">
+                                      <h3>Mot de passe oublié</h3>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          
+                          
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sid2">
+            <div class="sida">
+                <div class="sidleft">
+                    <div style="margin-right: 1.4em; display: flex; align-items: center;">
+                        <h5 style="max-width: 306px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: normal;">Mes formulaires</h5>
+                    </div>
+                    <div class="CreerFormu" (click)="toggleModal2()">
+                        <h6 style=" font-size: 13px;">CREER UN FORMULAIRES</h6>
+                    </div>
+
+                    <!-- Modal -->
+<div *ngIf="modal2" class="modal" (click)="closeModals()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h4 class="title">Créez votre formulaire</h4>
+          <span class="close-button cursor-p" (click)="closeModals()">
+            <!-- Ajoutez l'icône de fermeture ici -->
+          </span>
+        </div>
+        <div class="popup-content-wrapper mt-2">
+          <div class="container">
+            <div class="options-wrapper">
+              <div class="option-item ai-bg">
+                <div class="option-item-icon"></div>
+                <div class="option-item-text">
+                  <h3>Générer avec l'IA</h3>
+                  <p>Utilisez forms.app AI pour avoir un formulaire personnalisable instantanément</p>
+                </div>
+              </div>
+  
+              <div class="option-item">
+                <div class="option-item-icon"></div>
+                <div class="option-item-text">
+                  <h3>Commencer à partir de zéro</h3>
+                  <p>Obtenez une toile vierge pour laisser votre créativité s'exprimer</p>
+                </div>
+              </div>
+              <div class="option-item">
+                <div class="option-item-icon"></div>
+                <div class="option-item-text">
+                  <h3>Sélectionner un modèle</h3>
+                  <p>Choisissez parmi des modèles artisanaux pour commencer immédiatement.</p>
+                </div>
+              </div>
+              <div class="option-item">
+                <div class="option-item-icon"></div>
+                <div class="option-item-text">
+                  <h3>Importer un formulaire</h3>
+                  <p>Gagnez du temps en important vos formulaires existants (PDFs, URLs & plus)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                    <!-- <div class="btnformu">
+                        <span style="text-transform: uppercase; font-weight: 700; font-size: 1.06em;">CREER UN FORMULAIRES</span>
+                    </div> -->
+                </div>
+
+                <div class="sidb">
+                    <div class="sidright">
+
+                        <div>
+
+                        </div>
+                        <div class="div1o">
+                            <svg style="font-size: inherit; width: 1em; height: 1em;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 16H14C14.5523 16 15 16.4477 15 17C15 17.5128 14.614 17.9355 14.1166 17.9933L14 18H10C9.44772 18 9 17.5523 9 17C9 16.4872 9.38604 16.0645 9.88338 16.0067L10 16H14H10ZM8 11H16C16.5523 11 17 11.4477 17 12C17 12.5128 16.614 12.9355 16.1166 12.9933L16 13H8C7.44772 13 7 12.5523 7 12C7 11.4872 7.38604 11.0645 7.88338 11.0067L8 11H16H8ZM5 6H19C19.5523 6 20 6.44772 20 7C20 7.51284 19.614 7.93551 19.1166 7.99327L19 8H5C4.44772 8 4 7.55228 4 7C4 6.48716 4.38604 6.06449 4.88338 6.00673L5 6H19H5Z"></path></svg>
+                        </div>
+                        <div class="div1o">
+                            <svg style="font-size: inherit; width: 1em; height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M312 95.7h48c13.25 0 23.1-10.76 23.1-24.02c0-13.26-10.75-24.02-23.1-24.02h-48c-13.25 0-24 10.76-24 24.02C288 84.95 298.8 95.7 312 95.7zM312 351.9h175.1c13.25 0 24-10.76 24-24.02s-10.75-24.02-24-24.02H312c-13.25 0-24 10.76-24 24.02S298.8 351.9 312 351.9zM312 223.8h111.1c13.25 0 24-10.76 24-24.02s-10.75-24.02-24-24.02H312c-13.25 0-24 10.76-24 24.02S298.8 223.8 312 223.8zM551.1 431.1H312c-13.25 0-24 10.76-24 24.02S298.8 480 312 480h239.1c13.25 0 24-10.76 24-24.02S565.2 431.1 551.1 431.1zM145.6 39.37c-9.062-9.82-26.19-9.82-35.25 0L14.38 143.4c-9 9.758-8.406 24.96 1.344 33.94C20.35 181.7 26.19 183.8 32 183.8c6.469 0 12.91-2.594 17.62-7.719L104 117.1v338.9C104 469.2 114.8 480 128 480S152 469.2 152 455.1V117.1l54.37 58.95C215.3 185.8 230.5 186.5 240.3 177.4C250 168.4 250.6 153.2 241.6 143.4L145.6 39.37z"></path></svg>
+                        </div>
+                        <div  class="div1o">
+                            <svg style="font-size: inherit; width: 1em; height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M81.84 152.1C77.43 156.9 71.21 159.8 64.63 159.1C58.05 160.2 51.69 157.6 47.03 152.1L7.029 112.1C-2.343 103.6-2.343 88.4 7.029 79.03C16.4 69.66 31.6 69.66 40.97 79.03L63.08 101.1L118.2 39.94C127 30.09 142.2 29.29 152.1 38.16C161.9 47.03 162.7 62.2 153.8 72.06L81.84 152.1zM81.84 312.1C77.43 316.9 71.21 319.8 64.63 319.1C58.05 320.2 51.69 317.6 47.03 312.1L7.029 272.1C-2.343 263.6-2.343 248.4 7.029 239C16.4 229.7 31.6 229.7 40.97 239L63.08 261.1L118.2 199.9C127 190.1 142.2 189.3 152.1 198.2C161.9 207 162.7 222.2 153.8 232.1L81.84 312.1zM216 120C202.7 120 192 109.3 192 96C192 82.75 202.7 72 216 72H488C501.3 72 512 82.75 512 96C512 109.3 501.3 120 488 120H216zM192 256C192 242.7 202.7 232 216 232H488C501.3 232 512 242.7 512 256C512 269.3 501.3 280 488 280H216C202.7 280 192 269.3 192 256zM160 416C160 402.7 170.7 392 184 392H488C501.3 392 512 402.7 512 416C512 429.3 501.3 440 488 440H184C170.7 440 160 429.3 160 416zM64 448C46.33 448 32 433.7 32 416C32 398.3 46.33 384 64 384C81.67 384 96 398.3 96 416C96 433.7 81.67 448 64 448z"></path></svg>
+                        </div>
+                        <span class="tire" style="display: block; width: 1px; height: 29px; background: #d9d9d9; margin-left: 7px;"></span>
+                        <div class="div1o" style="font-size: 13px !important; padding: .7rem;">
+                            <svg  style="font-size: inherit; width: 1em; height: 1em; margin-right: 9px;
+                            font-size: 16px !important;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M88 48C101.3 48 112 58.75 112 72V120C112 133.3 101.3 144 88 144H40C26.75 144 16 133.3 16 120V72C16 58.75 26.75 48 40 48H88zM488 72C501.3 72 512 82.75 512 96C512 109.3 501.3 120 488 120H184C170.7 120 160 109.3 160 96C160 82.75 170.7 72 184 72H488zM488 232C501.3 232 512 242.7 512 256C512 269.3 501.3 280 488 280H184C170.7 280 160 269.3 160 256C160 242.7 170.7 232 184 232H488zM488 392C501.3 392 512 402.7 512 416C512 429.3 501.3 440 488 440H184C170.7 440 160 429.3 160 416C160 402.7 170.7 392 184 392H488zM16 232C16 218.7 26.75 208 40 208H88C101.3 208 112 218.7 112 232V280C112 293.3 101.3 304 88 304H40C26.75 304 16 293.3 16 280V232zM88 368C101.3 368 112 378.7 112 392V440C112 453.3 101.3 464 88 464H40C26.75 464 16 453.3 16 440V392C16 378.7 26.75 368 40 368H88z"></path></svg>
+                            liste
+                        </div>
+                        <div class="div1o"  style="font-size: 13px !important; padding: .7rem;background: #dedede;">
+                            <svg  style="font-size: inherit; width: 1em; height: 1em; margin-right: 9px;
+                            font-size: 16px !important;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 32C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H448zM448 96H288V224H448V96zM448 288H288V416H448V288zM224 224V96H64V224H224zM64 416H224V288H64V416z"></path></svg>
+                            Grille
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div></div>
+            <div class="lebas">
+
+                <img style="width: 80px;" src="assets/images/myforms.svg" alt="">
+                <h3 style="margin-top: 1em; font-size: 15px;">VOUS N'AVEZ PAS ENCORE CRÉÉ DE FORMULAIRES.</h3>
+                <p>Vos formulaires apparaîtront ici.</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>

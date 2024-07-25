@@ -1,0 +1,51 @@
+<div class="section-cartes">
+  <div class="centrale">
+    <div class="container-fluid centger2">
+
+        <div class="row md-12">
+    
+            <div class="col-6 ">
+                <img   class="applogo"  src="image/formsapp-logo.svg" alt="">
+    
+            </div>
+            <div class="col-6 ">
+    
+                <a href="home"><button class="btn btn-primary logoutbtn"> logout </button></a>
+    
+            </div>
+         
+         
+    
+        </div>
+    
+    </div>
+    
+    
+    
+    <div class="container">
+    
+    
+    
+        <div class="sidebar card">
+          <ul>
+
+            
+          </ul>
+        </div>
+
+        
+        <div class="content">
+          <input  type="text" placeholder="Search" class="search-bar form-control">
+          <div class="cards">
+            <div class="card" *="let form of forms">
+              <img [src]="form.image" alt="{{ form.name }}">
+              <p>{{ form.name }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+</div>
+</div>
+  

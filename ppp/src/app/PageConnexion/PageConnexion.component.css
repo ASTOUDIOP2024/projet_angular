@@ -1,0 +1,170 @@
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+}
+
+#col1{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.login-header h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 26px;
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.login-button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-button.google {
+    background-color: #4285f4;
+    color: white;
+    
+}
+
+.logo{
+    text-align: center;
+    margin-bottom: 2em;
+    
+}
+
+.imglogo{
+    max-width: 170px;
+    width: 100%;
+    margin: 50px auto 0;
+
+}
+
+.dlogog{
+    background: white;
+}
+
+.imglogog{
+    width: 10px;
+}
+
+.login-button.apple {
+    background-color: black;
+    color: white;
+}
+
+.divider {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #888;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form a {
+    display: block;
+    margin: 0.5rem 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.signup-link {
+    margin-top: 1rem;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+#col2 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.diaporama {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease;
+    text-align: center;
+    flex-basis: inherit;
+    
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Animation de slide */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+.diaporama {
+    animation: slide 20s infinite;
+}
+
+span{
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}

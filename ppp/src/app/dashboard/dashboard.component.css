@@ -1,0 +1,408 @@
+.divH2{
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: 1px solid #dedede;
+}
+
+.divSH2{
+    margin: 0 auto;
+    max-width: calc(98vw - 2em);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.sidebar{
+    display: flex;
+    height: 100%;
+    flex: 1 1 0%;
+    flex-flow: row nowrap;
+    overflow: hidden;
+
+
+}
+
+.sid1{
+    width: 300px;
+}
+
+.sid2{
+    position: relative;
+    flex: 1;
+    overflow: auto;
+    margin-left: -2em;
+    padding-left: 2em;
+    background: #f5f5f5;
+}
+
+.CreerFormu{
+    background-color: #11c4e0;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 1em;
+    padding: 7px;
+}
+
+.Csid1{
+    margin-right: 2em;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #dedede;
+    /* height: 100%; */
+
+}
+
+.formu{
+    display: flex;
+    background: #f5f5f5;
+    border-bottom: 1px solid #dedede;
+    padding: 10px;
+    
+}
+
+.dossier{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.Cgratuit{
+    border-top: 1px solid #e0e0e0;
+    padding: 0 .9em;
+    display: flex;
+    border-bottom: 1px solid #dedede;
+    height: 50px;
+    align-items: center;
+}
+
+.sid11{
+    margin-right: 2rem;
+    border-right: 1px solid #dedede;
+}
+
+/* .Archive{
+    
+} */
+
+.restant a{
+    display: flex;
+    padding: 1em 1em;
+    border-top: 1px solid #e0e0e0;
+    font-weight: 600;
+    transition: .3s;
+    position: relative;
+}
+
+.btnformu{
+    font-size: 1.4rem;
+    /* z-index: 1; */
+    /* position: relative; */
+    cursor: pointer;
+    background-color: #11c4e0;
+    color: #fff;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 1em;
+    padding: 1.2em 2.3em;
+}
+
+.sida{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.sidleft{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sidb{
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-right: 23px;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    top: 9px;
+}
+
+.sidright{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    margin-top: 0;
+    width: 100%;
+}
+
+.div1o{
+    border-radius: 8px;
+    transition: max-width .3s linear;
+    flex-shrink: 0;
+    background: #fff;
+    margin-left: .5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+    padding: .7em;
+    justify-content: center;
+    transition: .3s;
+}
+
+.lebas{
+    text-align: center;
+    /* position: absolute; */
+    left: -1em;
+    top: 0;
+    width: 100%;
+    height: 94%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    z-index: -1;
+}
+
+
+/* modal 2 */
+.div1 {
+    position: fixed; /* Fixe le modal par rapport à la fenêtre */
+    top: 50%; /* Place le modal au milieu de la page verticalement */
+    left: 50%; /* Place le modal au milieu de la page horizontalement */
+    transform: translate(-50%, -50%); /* Décale le modal pour qu'il soit parfaitement centré */
+    background-color: white; /* Couleur de fond */
+    padding: 1em; /* Padding pour l'espace intérieur */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    z-index: 1000; /* Assure que le modal soit au-dessus des autres éléments */
+  }
+  
+  .div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .div3 {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .put {
+    margin: 0.5em 0;
+  }
+  
+  .btnfrm, .btnC, .btn {
+    margin: 0.5em 0;
+  }
+  
+  .logforg {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #connct {
+    margin-bottom: 1em;
+  }
+  
+  /* Pour assombrir le fond lorsqu'un modal est ouvert */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de l'overlay avec transparence */
+    z-index: 999; /* Doit être en dessous du modal */
+  }
+  /* fin modal 2 */
+
+  /* modal 1 */
+
+  .popup-content {
+    padding: 2.4em;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    max-height: 96vh;
+    overflow: auto;
+    max-width: 1100px;
+
+    top: 0px;
+    overflow: initial;
+}
+
+.popup-header {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    padding-left: 2.4em;
+    padding-right: 2.4em;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    cursor: pointer;
+    padding: .7em 2em;
+    z-index: 5;
+    font-size: 1rem;
+    margin-top: .2em;
+font-size: 17px;
+}
+
+.close-button {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 5;
+    font-size: 1.4rem;
+    border-radius: 7px;
+    padding: .2em .3em .3em;
+    transition: .3s;
+}
+
+.popup .popup-content .popup-content-wrapper.mt-2 {
+    margin-top: 2em;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: calc(98vw - 2em);
+}
+
+.options-wrapper{
+    display: flex;
+    gap: 1em;
+    margin: 0 auto;
+}
+
+.options-wrapper .option-item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5em 1.5em;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    gap: 2em;
+    transition: .3s;
+}
+
+.options-wrapper .option-item .option-item-text {
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: .6em;
+}
+
+.options-wrapper .option-item .option-item-text p {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: .8;
+}
+
+/* modal2 */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .popup-content {
+    width: 500px;
+    max-width: 100%;
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .popup-content-wrapper {
+    margin-top: 20px;
+  }
+  
+  .option-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .option-item-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .option-item-text h3 {
+    margin: 0 0 5px;
+  }
+  
+  .option-item-text p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  

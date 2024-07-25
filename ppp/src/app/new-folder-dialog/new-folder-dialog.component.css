@@ -1,0 +1,17 @@
+.colors {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .color {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .add-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+  }
+  

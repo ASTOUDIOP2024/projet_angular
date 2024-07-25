@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/assets/fonts/roboto/roboto-v20-latin-300.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/roboto/roboto-v20-latin-400.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/roboto/roboto-v20-latin-500.woff2') format('woff2');
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
